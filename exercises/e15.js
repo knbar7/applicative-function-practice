@@ -6,13 +6,9 @@ import { data } from "../data/data";
 
 export function getPlanetsWithNoMoons(data) {
   // Your code goes here...
-  const planets = data.planets;
-
-  const noMoons = planets
-    .filter(obj => obj.moons === undefined)
-    .map(obj => obj.name);
-
-  return noMoons;
+  return data.planets
+  .filter(obj => obj.moons === undefined)
+  .map(obj => obj.name);
 }
 
 
